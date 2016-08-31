@@ -1,0 +1,16 @@
+---
+spring:
+ application:
+  name: apigateway-micorservice
+ cloud:
+  config:
+   name: http://localhost:8080
+---
+spring:
+  cloud:
+    consul:
+      discovery:
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+server: 
+  port: 8008

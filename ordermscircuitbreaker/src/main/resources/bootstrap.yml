@@ -1,0 +1,10 @@
+---
+spring:
+ application:
+  name: order-hystrix
+ cloud:
+  config:
+   name: http://localhost:8080
+
+server: 
+  port: 8006
