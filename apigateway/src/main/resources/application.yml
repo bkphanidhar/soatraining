@@ -1,2 +1,10 @@
 zuul:
-  prefix: /services
+  #prefix: /services
+  ignored-services: '*'   
+  routes:
+    order_service:
+      path: /orderservice/**
+      service-id: order-micorservice
+    manufacturer-service:
+      path: /mfrsservice/**
+      service-id: manufacture-micorservice
