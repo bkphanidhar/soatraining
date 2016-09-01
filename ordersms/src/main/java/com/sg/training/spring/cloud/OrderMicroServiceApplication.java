@@ -9,7 +9,6 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @SpringBootApplication
 @EnableMongoRepositories(basePackages="com.sg.training.spring.cloud.repository")
 @EnableDiscoveryClient
-@EnableResourceServer
 public class OrderMicroServiceApplication {
 
 	public static void main(String[] args) {
