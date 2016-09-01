@@ -4,6 +4,6 @@ spring:
   name: manufacture-micorservice
  cloud:
   config:
-   name: http://localhost:8080
+   uri: http://localhost:8080
 server: 
   port: 8002

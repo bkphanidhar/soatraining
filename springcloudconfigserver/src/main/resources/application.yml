@@ -1,9 +1,7 @@
----
- spring:
+spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/krishnamurthypradeep/ConfigData1/blob/master/application.yml
-          searchPaths: ConfigData1
- 
+          uri: https://github.com/krishnamurthypradeep/ConfigData1
+          search-paths: ConfigData1

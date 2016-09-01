@@ -4,7 +4,7 @@ spring:
   name: order-circuitbreaker-micorservice
  cloud:
   config:
-   name: http://localhost:8080
+   uri: http://localhost:8080
 ---
 spring:
   cloud:

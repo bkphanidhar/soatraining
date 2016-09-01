@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: order-messagequeue-micorservice
+  cloud:
+    config:
+      uri: http://localhost:8080
+---
+spring:
+  cloud:
+    consul:
+      discovery:
+        health-check-interval: 10s
+      config:
+        watch:
+          enabled: false
+---
+server: 
+  port: 8002
