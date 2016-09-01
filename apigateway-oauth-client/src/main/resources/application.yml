@@ -22,7 +22,7 @@ security:
       accessTokenUri: http://localhost:${server.port}/sg/oauth/token
       userAuthorizationUri: /sg/oauth/authorize
       clientId: sg
-      clientSecret: password@123
+      clientSecret: admin@123
     resource:
       jwt:
         keyValue: |
